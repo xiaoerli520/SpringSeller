@@ -1,0 +1,14 @@
+Starting LoggerTest on DESKTOP-O9M4NG9 with PID 3144 (started by GTX in C:\Users\GTX\IdeaProjects\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@40cb8df7: startup date [Thu Jan 25 23:59:22 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@40cb8df7: startup date [Thu Jan 25 23:59:22 CST 2018]; root of context hierarchy
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started LoggerTest in 3.332 seconds (JVM running for 4.507)
+name: immoc, password: 123456
+info....
+Closing org.springframework.web.context.support.GenericWebApplicationContext@40cb8df7: startup date [Thu Jan 25 23:59:22 CST 2018]; root of context hierarchy

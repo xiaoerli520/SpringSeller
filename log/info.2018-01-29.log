@@ -1,0 +1,286 @@
+Starting OrderServiceImplTest on bogon with PID 728 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 10:36:22 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 10:36:22 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 11.927 seconds (JVM running for 14.431)
+Began transaction (1) for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@6818fd48, testMethod = cancel@OrderServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@24a4e2c5]; rollback [true]
+HHH000397: Using ASTQueryTranslatorFactory
+[取消订单]状态不正确 orderId = 1517111474489633294, orderStatus = 0
+Rolled back transaction for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@6818fd48, testMethod = cancel@OrderServiceImplTest, testException = com.gtx.sell.exception.SellException: 订单状态不正确, mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+Closing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 10:36:22 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 736 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 10:37:57 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 10:37:57 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.505 seconds (JVM running for 7.749)
+Began transaction (1) for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@4b4814d0, testMethod = cancel@OrderServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@26c7b1c6]; rollback [true]
+HHH000397: Using ASTQueryTranslatorFactory
+Rolled back transaction for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@4b4814d0, testMethod = cancel@OrderServiceImplTest, testException = java.lang.AssertionError: expected:<2> but was:<0>, mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+Closing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 10:37:57 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 742 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6cd28fa7: startup date [Mon Jan 29 10:39:18 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6cd28fa7: startup date [Mon Jan 29 10:39:18 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.456 seconds (JVM running for 7.592)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@6cd28fa7: startup date [Mon Jan 29 10:39:18 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 744 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5c18016b: startup date [Mon Jan 29 10:39:55 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5c18016b: startup date [Mon Jan 29 10:39:55 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 8.256 seconds (JVM running for 10.65)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5c18016b: startup date [Mon Jan 29 10:39:55 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 749 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5c18016b: startup date [Mon Jan 29 10:40:23 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5c18016b: startup date [Mon Jan 29 10:40:23 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 8.209 seconds (JVM running for 10.133)
+HHH000397: Using ASTQueryTranslatorFactory
+[取消订单]状态不正确 orderId = 1517111474489633294, orderStatus = 2
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5c18016b: startup date [Mon Jan 29 10:40:23 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 754 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5c18016b: startup date [Mon Jan 29 10:41:22 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5c18016b: startup date [Mon Jan 29 10:41:22 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 7.851 seconds (JVM running for 9.891)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@5c18016b: startup date [Mon Jan 29 10:41:22 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 759 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6cd28fa7: startup date [Mon Jan 29 10:42:14 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6cd28fa7: startup date [Mon Jan 29 10:42:14 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.677 seconds (JVM running for 7.931)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@6cd28fa7: startup date [Mon Jan 29 10:42:14 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 786 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6cd28fa7: startup date [Mon Jan 29 10:47:01 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6cd28fa7: startup date [Mon Jan 29 10:47:01 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.911 seconds (JVM running for 8.284)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@6cd28fa7: startup date [Mon Jan 29 10:47:01 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 819 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 10:57:51 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 10:57:51 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.76 seconds (JVM running for 8.039)
+Began transaction (1) for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@6f315b08, testMethod = finish@OrderServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@5d2a86c0]; rollback [true]
+HHH000397: Using ASTQueryTranslatorFactory
+Rolled back transaction for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@6f315b08, testMethod = finish@OrderServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+Closing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 10:57:51 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 885 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 11:19:35 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 11:19:35 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 8.179 seconds (JVM running for 9.811)
+Began transaction (1) for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@1d99ee1b, testMethod = paid@OrderServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@7c71c889]; rollback [true]
+HHH000397: Using ASTQueryTranslatorFactory
+Rolled back transaction for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@1d99ee1b, testMethod = paid@OrderServiceImplTest, testException = java.lang.AssertionError: expected:<1> but was:<0>, mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+Closing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 11:19:35 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+Starting OrderServiceImplTest on bogon with PID 889 (started by gtx in /Users/gtx/IdeaProjects/sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 11:20:08 CST 2018]; root of context hierarchy
+HV000001: Hibernate Validator 5.3.6.Final
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.0.12.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 11:20:08 CST 2018]; root of context hierarchy
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.gtx.sell.VO.ResultVO com.gtx.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Started OrderServiceImplTest in 6.363 seconds (JVM running for 7.524)
+Began transaction (1) for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@388be5fd, testMethod = paid@OrderServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@79e10fb4]; rollback [true]
+HHH000397: Using ASTQueryTranslatorFactory
+Rolled back transaction for test context [DefaultTestContext@1e9e725a testClass = OrderServiceImplTest, testInstance = com.gtx.sell.service.impl.OrderServiceImplTest@388be5fd, testMethod = paid@OrderServiceImplTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@15d9bc04 testClass = OrderServiceImplTest, locations = '{}', classes = '{class com.gtx.sell.SellApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@64bf3bbf, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@dc24521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e0b0338, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@210366b4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+Closing org.springframework.web.context.support.GenericWebApplicationContext@614ca7df: startup date [Mon Jan 29 11:20:08 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'

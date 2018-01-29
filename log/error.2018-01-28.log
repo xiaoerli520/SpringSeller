@@ -1,0 +1,7 @@
+Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
+Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
+Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
+Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
+Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
+Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
+Cannot add or update a child row: a foreign key constraint fails (`sell`.`order_detail`, CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order_master` (`order_id`))
