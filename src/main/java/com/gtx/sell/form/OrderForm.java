@@ -1,4 +1,4 @@
-package com.gtx.sell.repository;
+package com.gtx.sell.form;
 
 
 import lombok.Data;

@@ -74,9 +74,9 @@ public class OrderServiceImpl implements OrderService {
         // 写入订单数据库 OrderMaster OrderDetail
 
         OrderMaster orderMaster = new OrderMaster();
-
+        orderDTO.setOrderId(orderId);
         BeanUtils.copyProperties(orderDTO, orderMaster); // 出现了拷贝覆盖掉的问题 null也会
-        orderMaster.setOrderId(orderId);
+
         orderMaster.setOrderAmount(orderAmount);
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
