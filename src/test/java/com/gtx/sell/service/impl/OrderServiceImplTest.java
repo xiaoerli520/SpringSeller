@@ -98,9 +98,10 @@ public class OrderServiceImplTest {
 
     @Test
     public void findAllList() {
-        PageRequest pageRequest = new PageRequest(0, 2);
+        PageRequest pageRequest = new PageRequest(0, 10);
         Page<OrderDTO> orderDTOPage = orderService.findList(pageRequest);
-
+        // log.info(orderDTOPage.getContent());
+        System.out.println(orderDTOPage);
         Assert.assertNotNull(orderDTOPage);
     }
 }

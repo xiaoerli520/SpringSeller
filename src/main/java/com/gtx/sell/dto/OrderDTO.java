@@ -1,11 +1,13 @@
 package com.gtx.sell.dto;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.gtx.sell.dao.OrderDetail;
 import com.gtx.sell.enums.OrderStatusEnum;
 import com.gtx.sell.enums.PayStatusEnum;
+import com.gtx.sell.utils.EnumUtil;
 import com.gtx.sell.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 
@@ -43,4 +45,14 @@ public class OrderDTO {
     private Date updateTime;
 
     private List<OrderDetail> orderDetailList = new ArrayList<>(); // 需要返回默认一个中括号
+
+    @JsonIgnore
+    public OrderStatusEnum getOrderStatusEnum() {
+        return EnumUtil.getByCode(orderStatus, OrderStatusEnum.class);
+    }
+
+    @JsonIgnore
+    public PayStatusEnum getPayStatusEnum() {
+        return EnumUtil.getByCode(payStatus, PayStatusEnum.class);
+    }
 }
