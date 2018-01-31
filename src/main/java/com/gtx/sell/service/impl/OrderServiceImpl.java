@@ -13,6 +13,7 @@ import com.gtx.sell.exception.SellException;
 import com.gtx.sell.repository.OrderDetailRepository;
 import com.gtx.sell.repository.OrderMasterRepository;
 import com.gtx.sell.service.OrderService;
+import com.gtx.sell.service.PayService;
 import com.gtx.sell.service.ProductService;
 import com.gtx.sell.utils.KeyUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -44,6 +45,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private OrderMasterRepository orderMasterRepository;
+
+    @Autowired
+    private PayService payService;
 
     @Override
     @Transactional
@@ -162,7 +166,8 @@ public class OrderServiceImpl implements OrderService {
 
         // 如果已经支付 退款
         if (orderDTO.getPayStatus().equals(PayStatusEnum.SUCCESS.getCode())) {
-            // todo 退款相关操作
+            // 退款是无法进行的 没有key
+            // payService.refund(orderDTO);
         }
         return orderDTO;
     }
@@ -217,5 +222,14 @@ public class OrderServiceImpl implements OrderService {
 
         return orderDTO;
 
+    }
+
+    @Override
+    public Page<OrderDTO> findList(Pageable pageable) {
+        Page<OrderMaster> orderMasters = orderMasterRepository.findAll(pageable);
+
+        List<OrderDTO> orderDTOList = OrderMaster2OrderDTOConverter.convert(orderMasters.getContent());
+
+        return new PageImpl<OrderDTO>(orderDTOList, pageable, orderMasters.getTotalElements());
     }
 }

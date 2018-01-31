@@ -31,7 +31,7 @@ public class WechatController {
     @GetMapping("/authorize")
     public String authorize(@RequestParam("returnUrl") String returnUrl) {
         String url = "http://sellg.s1.natapp.cc/sell/wechat/userInfo";
-        String redirectURL =  wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAUTH2_SCOPE_BASE, URLEncoder.encode(returnUrl));
+        String redirectURL =  wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAUTH2_SCOPE_USER_INFO, URLEncoder.encode(returnUrl));
         log.error("[微信网页授权] redirecturl = {}", redirectURL);
         return "redirect:" + redirectURL;
     }

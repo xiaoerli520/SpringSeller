@@ -1774,3 +1774,4 @@ com.gtx.sell.exception.SellException: 订单不存在
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+[微信网页授权] redirecturl = https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd6d18f65469cabfb&redirect_uri=http%3A%2F%2Fsellg.s1.natapp.cc%2Fsell%2Fwechat%2FuserInfo&response_type=code&scope=snsapi_userinfo&state=http%3A%2F%2F192.168.1.105%2F%23%2F#wechat_redirect
