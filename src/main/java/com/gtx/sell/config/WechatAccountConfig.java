@@ -20,4 +20,6 @@ public class WechatAccountConfig {
 
     private String keyPath;
 
+    private String notifyUrl; // 微信支付异步通知
+
 }

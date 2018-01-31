@@ -29,7 +29,9 @@ public enum  ResultEnum {
 
     ORDER_OWNER_ERROR(20, "订单openid不匹配"),
 
-    WECHAT_MP_ERROR(21, "微信公众号错误")
+    WECHAT_MP_ERROR(21, "微信公众号错误"),
+
+    WXPAY_NOTIFY_MONEY_VERIFY_ERROR(22, "微信支付异步通知校验不通过"),
 
     ;
 
