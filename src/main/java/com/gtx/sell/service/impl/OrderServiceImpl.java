@@ -121,7 +121,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public Page<OrderDTO> findList(String buyeropenId, Pageable pageable) {
+    public Page<OrderDTO> findList(String buyeropenId, Pageable pageable)   {
 
         Page<OrderMaster> orderMasterList = orderMasterRepository.findByBuyerOpenid(buyeropenId, pageable);
 
@@ -167,6 +167,7 @@ public class OrderServiceImpl implements OrderService {
         // 如果已经支付 退款
         if (orderDTO.getPayStatus().equals(PayStatusEnum.SUCCESS.getCode())) {
             // 退款是无法进行的 没有key
+            // 这边顾及到了支付后的退款操作
             // payService.refund(orderDTO);
         }
         return orderDTO;
