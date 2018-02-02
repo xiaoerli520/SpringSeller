@@ -22,6 +22,8 @@ public class ProductServiceImplTest {
     @Autowired
     private ProductServiceImpl productService;
 
+    private static final String PRODUCT_ID = "123123";
+
     @Test
     public void findOne() {
         ProductInfo productInfo = productService.findOne("123123");
@@ -48,5 +50,19 @@ public class ProductServiceImplTest {
     public void findUpAll() {
         List<ProductInfo> productInfos = productService.findUpAll();
         Assert.assertNotNull(productInfos);
+    }
+
+    @Test
+    @Transactional
+    public void onSaleTest() {
+        ProductInfo productInfo = productService.onSale(PRODUCT_ID);
+        Assert.assertEquals(ProductStatusEnum.UP, productInfo.getProductStatusEnum());
+    }
+
+    @Test
+    @Transactional
+    public void offSaleTest() {
+        ProductInfo productInfo = productService.offSale(PRODUCT_ID);
+        Assert.assertEquals(ProductStatusEnum.DOWN, productInfo.getProductStatusEnum());
     }
 }

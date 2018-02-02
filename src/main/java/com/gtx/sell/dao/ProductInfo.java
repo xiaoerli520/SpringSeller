@@ -1,6 +1,9 @@
 package com.gtx.sell.dao;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.gtx.sell.enums.ProductStatusEnum;
+import com.gtx.sell.utils.EnumUtil;
 import lombok.Data;
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -28,7 +31,7 @@ public class ProductInfo {
 
     private String productIcon;
 
-    private Integer productStatus; // 0 norman 1 xiajia
+    private Integer productStatus = ProductStatusEnum.UP.getCode(); // 0 norman 1 xiajia
 
     private Integer categoryType;
 
@@ -48,6 +51,11 @@ public class ProductInfo {
         this.productIcon = productIcon;
         this.productStatus = productStatus;
         this.categoryType = categoryType;
+    }
+
+    @JsonIgnore
+    public ProductStatusEnum getProductStatusEnum() {
+        return EnumUtil.getByCode(productStatus, ProductStatusEnum.class);
     }
 
 
