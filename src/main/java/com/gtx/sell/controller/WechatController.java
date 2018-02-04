@@ -28,6 +28,9 @@ public class WechatController {
     @Autowired
     private WxMpService wxMpService;
 
+    @Autowired
+    private WxMpService wxOpenService;
+
     @GetMapping("/authorize")
     public String authorize(@RequestParam("returnUrl") String returnUrl) {
         String url = "http://sellg.s1.natapp.cc/sell/wechat/userInfo";
@@ -48,8 +51,12 @@ public class WechatController {
         String openId = wxMpOAuth2AccessToken.getOpenId();
 
         return "redirect:" + returnUrl + "?openid=" + openId;
-
-
-
     }
+
+    @GetMapping("/qrAuthorize")
+    public String qrAuthorize(@RequestParam("returnUrl") String returnUrl) {
+        // todo qrlogin
+    }
+
+
 }

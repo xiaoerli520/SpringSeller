@@ -22,4 +22,8 @@ public class WechatAccountConfig {
 
     private String notifyUrl; // 微信支付异步通知
 
+    private String openAppId;
+
+    private String openAppSecret;
+
 }
