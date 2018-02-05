@@ -115,7 +115,37 @@
     </div>
 </div>
 
+<script>
+    var websocket = null;
+    if ('WebSocket' in window) {
+        websocket = new WebSocket('ws://localhost:8000/sell/webSocket')
+    } else {
+        alert('该浏览器不支持websocket');
+    }
 
+    websocket.onopen = function (ev) {
+        console.log("建立连接");
+    }
+
+    websocket.onclose = function (ev) {
+        console.log("链接关闭");
+    }
+
+    websocket.onmessage = function (ev) {
+        console.log("链接发送消息" + ev.data)
+        // 播放音乐 弹窗题型
+    }
+
+    websocket.onerror = function (ev) {
+        console.log("websocket 错误");
+    }
+
+    window.onbeforeunload = function (ev) {
+        websocket.close();
+    }
+
+
+</script>
 
 </body>
 

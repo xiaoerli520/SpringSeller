@@ -42,6 +42,8 @@ public enum  ResultEnum {
 
     LOGOUT_SUCCESS(25, "登出成功")
 
+
+
     ;
 
     private Integer code;
