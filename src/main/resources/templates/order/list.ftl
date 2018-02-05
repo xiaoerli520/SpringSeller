@@ -115,7 +115,41 @@
     </div>
 </div>
 
+<div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">
+                    题型
+                </h4>
+            </div>
+            <div class="modal-body">
+                您有新的定单
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" onclick="MusicPause()" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="location.reload()">查看新订单</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<audio id="notice" loop="loop">
+    <source src="/sell/mp3/hop.mp3" type="audio/mpeg"/>
+</audio>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 <script>
+
+    function MusicPause() {
+        document.getElementById("notice").pause()
+    }
+
     var websocket = null;
     if ('WebSocket' in window) {
         websocket = new WebSocket('ws://localhost:8000/sell/webSocket')
@@ -134,7 +168,10 @@
     websocket.onmessage = function (ev) {
         console.log("链接发送消息" + ev.data)
         // 播放音乐 弹窗题型
-    }
+        $('#myModal').modal('show');
+
+        document.getElementById("notice").play();
+    };
 
     websocket.onerror = function (ev) {
         console.log("websocket 错误");
